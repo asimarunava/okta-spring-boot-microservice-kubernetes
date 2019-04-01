@@ -54,7 +54,7 @@ TOKEN=eyJraWQiOiI4UlE5REJGVUJOTnJER0VGaEExekd6bWJqREp...
 Run a GET on the `/kayaks` endpoint with the token:
 
 ```bash
-http $INGRESS_HOST:$INGRESS_PORT/kayaks Authorization:"Bearer $TOKEN"
+http :8080/kayaks Authorization:"Bearer $TOKEN"
 ```
 
 **NOTE the double quotes!** Single quotes won’t work because the variable won’t be expanded in the string.
